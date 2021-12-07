@@ -1,0 +1,6 @@
+.banner-property{
+    background-color: rgb(158, 202, 202);
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+}
