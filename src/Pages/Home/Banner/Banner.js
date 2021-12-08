@@ -9,7 +9,7 @@ const Banner = () => {
         <div className='banner-property d-md-flex' id='home'>
             <div>
                 <h1>Hello Iam Robin hawlader</h1>
-                <p>I am a <Typical
+                <h3>I am a <Typical
                     loop={Infinity}
                     wrapper="b"
                     steps={[
@@ -19,7 +19,7 @@ const Banner = () => {
                         1000,
                     ]}
                 />
-                </p>
+                </h3>
 
                 <a href="https://drive.google.com/file/d/1ICvPx8xTdHry8cwPm-970y0kYORtiF3B/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Button variant='primary'>Resume</Button></a>
             </div>
