@@ -19,7 +19,7 @@ const Banner = () => {
                         1000,
                     ]}
                 />
-                </h3>
+                </h3 >
 
                 <a href="https://drive.google.com/file/d/1ICvPx8xTdHry8cwPm-970y0kYORtiF3B/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Button variant='primary'>Resume</Button></a>
             </div>

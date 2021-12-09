@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Banner from './Pages/Home/Banner/Banner';
-import Project from './Pages/Home/Projects/Project';
-import Header from './Pages/Home/Header/Header';
-import { Contact } from './Pages/Contact/Contact';
+import MainPage from './Pages/MainPage/MainPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Motor from './Pages/Details/Motor/Motor';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Banner></Banner>
-      <Project></Project>
-      <Contact></Contact>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<MainPage></MainPage>}></Route>
+          <Route path='/home' element={<MainPage></MainPage>}></Route>
+          <Route path='/details' element={<Motor></Motor>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,5 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './Contact.css'
 
 export const Contact = () => {
@@ -16,12 +18,14 @@ export const Contact = () => {
             });
     };
 
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, []);
+
     return (
-        <form id='contact' className='mx-auto my-4' ref={form} onSubmit={sendEmail}>
+        <form data-aos='fade-up' id='contact' className='mx-auto my-4' ref={form} onSubmit={sendEmail}>
             <label>Name</label>
             <input type="text" name="user_name" />
-            <label>Subject</label>
-            <input type="text" name="subject" />
             <label>Email</label>
             <input type="email" name="user_email" />
             <label>Message</label>
