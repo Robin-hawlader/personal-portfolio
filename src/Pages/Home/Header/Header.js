@@ -1,32 +1,23 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Container, Form, FormControl, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Container, Nav, Navbar, } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
+import './Header.css';
 
 const Header = () => {
     return (
         <div>
-
-            <Navbar bg="light" expand={false}>
-                <Container fluid>
-                    <Navbar.Brand href="#">Portfolio</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                    <Navbar.Offcanvas
-                        id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel"
-                        placement="end"
-                    >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="#project">Projects</Nav.Link>
-                                <Nav.Link href="#contact">Contact</Nav.Link>
-                                <Nav.Link href="#action2">About</Nav.Link>
-                            </Nav>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
+            <Navbar collapseOnSelect expand="lg" fixed='top' bg="secondary" variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home" className='d-flex justify-content-center align-items-center'>Personal portfolio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="ms-auto link-decorate">
+                            <HashLink to='/#home'>Home</HashLink>
+                            <HashLink to='/#project'>Project</HashLink>
+                            <HashLink to='/#contact'>Contact</HashLink>
+                            <HashLink to='/#about'>About</HashLink>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </div>

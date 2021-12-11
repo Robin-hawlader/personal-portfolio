@@ -1,6 +1,7 @@
 
 .project-details{
     transition: 0.6s;
+    transform: scaleY();
 }
 
 .project-details:hover{

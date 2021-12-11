@@ -1,0 +1,8 @@
+.link-decorate a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.link-decorate a:hover{
+    color:cyan;
+}
