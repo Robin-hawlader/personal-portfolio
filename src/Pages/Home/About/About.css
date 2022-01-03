@@ -5,7 +5,7 @@
 .skils{
     text-align: start;
     width: 500px;
-    margin: 60px auto;
+    /* margin: 60px auto; */
     padding: 20px;
     background: rgb(57, 58, 70);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22)

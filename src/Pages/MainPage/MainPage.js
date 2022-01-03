@@ -3,6 +3,7 @@ import { Contact } from '../Contact/Contact';
 import Banner from '../Home/Banner/Banner';
 import About from '../Home/About/About';
 import Project from '../Project/Project';
+import Footer from '../Footer/Footer';
 
 const MainPage = () => {
     return (
@@ -11,6 +12,7 @@ const MainPage = () => {
             <About></About>
             <Project></Project>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

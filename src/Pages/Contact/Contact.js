@@ -19,18 +19,22 @@ export const Contact = () => {
     };
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 3000 })
     }, []);
 
     return (
-        <form data-aos='fade-up' id='contact' className='mx-auto my-4' ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </form>
+        <div data-aos='fade-up'>
+            <h2>Contact me</h2>
+            <form id='contact' className='mx-auto my-4' ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+
     );
 };
